@@ -1,7 +1,59 @@
 <!doctype html>
 <html>
+<head>
+    <style>
+        table {
+            border-collapse: collapse;
+            width: 100%;
+            margin-top: 12px;
+        }
+
+        th, td {
+            border: 1px solid #d5d5d5;
+            padding: 10px 12px;
+        }
+
+        th {
+            color: #405b79;
+            text-align: left;
+        }
+
+        .units {
+            background: #eef6fd;
+            color: #405b79;
+        }
+
+        #ElementRows td {
+            text-align: center;
+        }
+    </style>
+</head>
 <body>
-<input type="text",name="ChemicalFormulafield" id="ChemicalFormulaField" placeholder="Enter Chemical Formula">
-<textarea>Result of chemical analysis will be displayed here.</textarea>
+    <input type="text" name="ChemicalFormulaField" id="ChemicalFormulaField" placeholder="Enter Chemical Formula">
+    <table>
+        <thead>
+            <tr>
+                <th scope="col">#</th>
+                <th scope="col">Atom</th>
+                <th scope="col">Element molar mass</th>
+                <th scope="col">Subtotal Mass</th>
+            </tr>
+            <tr class="units">
+                <td></td>
+                <td></td>
+                <td>(g/mol)</td>
+                <td>(g/mol)</td>
+            </tr>
+        </thead>
+        <tbody id="ElementRows"></tbody>
+        <tfoot>
+            <tr>
+                <td colspan="2"></td>
+                <th scope="row">Total molar mass (g/mol):</th>
+                <td><input type="text" id="MolarMassResult" readonly></td>
+            </tr>
+        </tfoot>
+    </table>
+    <script type="module" src="./tableBuilder.js"></script>
 </body>
 </html>
