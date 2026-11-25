@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="theme-color" content="#0D0D0D">
+    <title>Spinny Chair</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles/style.css">
+    <link rel="stylesheet" href="styles/spinny-chair.css">
+    <script src="scripts/script.js" defer></script>
+</head>
+
+<body class="spinny-page">
+    <img class="spinny-photo" src="images/spinny-chair.jpg" alt="A spinning chair">
+    <header>
+        <button class="menu-icon" type="button" aria-label="Open menu" aria-controls="sidebar" aria-expanded="false">
+            <span></span>
+            <span></span>
+            <span></span>
+        </button>
+    </header>
+    <div class="sidebar-overlay" id="sidebar-overlay"></div>
+
+    <nav class="sidebar" id="sidebar" aria-label="Main menu">
+        <h2 class="sidebar-title">SUPER FUN MENU!</h2>
+
+        <ul class="sidebar-links">
+            <li><a href="index.html">Calculator</a></li>
+            <li><a href="photo-generator.html">Photo generator</a></li>
+            <li><a href="minecraft-ideas.html">Minecraft ideas</a></li>
+            <!-- aria-current="page" = de pagina waar je nu op zit -->
+            <li><a href="spinny-chair.html" aria-current="page">Spinny chair</a></li>
+            <li><a href="the-game.html">The game</a></li>
+            <li><a href="tech-support.html">Tech support</a></li>
+        </ul>
+    </nav>
+</body>
+</html>

@@ -1,8 +1,119 @@
-<!doctype html>
-<html>
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="theme-color" content="#0D0D0D">
+    <title>Chemical Formula Calculator</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles/style.css">
+    <script src="scripts/script.js" defer></script>
+</head>
+
 <body>
-    <p>the game</p>
-<input type="text">
-<textarea></textarea>
+    <div class="background-grid" aria-hidden="true"></div>
+    <div class="background-numbers" aria-hidden="true">
+        <span>34</span>
+        <span>34</span>
+        <span>34</span>
+    </div>
+
+    <header>
+        <button class="menu-icon" type="button" aria-label="Open menu" aria-controls="sidebar" aria-expanded="false">
+            <span></span>
+            <span></span>
+            <span></span>
+        </button>
+    </header>
+
+    <div class="sidebar-overlay" id="sidebar-overlay"></div>
+    <nav class="sidebar" id="sidebar" aria-label="Main menu">
+        <h2 class="sidebar-title">SUPER FUN MENU!</h2>
+        <ul class="sidebar-links">
+            <!-- aria-current="page" = de pagina waar je nu op zit -->
+            <li><a href="index.html" aria-current="page">Calculator</a></li>
+            <li><a href="photo-generator.html">Photo generator</a></li>
+            <li><a href="minecraft-ideas.html">Minecraft ideas</a></li>
+            <li><a href="spinny-chair.html">Spinny chair</a></li>
+            <li><a href="the-game.html">The game</a></li>
+            <li><a href="tech-support.html">Tech support</a></li>
+        </ul>
+    </nav>
+
+    <main class="calculator">
+        <section class="calculator-top">
+            <h1>CHEMICAL FORMULA</h1>
+            <input
+                type="text"
+                class="formula-input"
+                placeholder="NaOH.."
+                aria-label="Chemical formula"
+                autocomplete="off"
+                autocapitalize="off"
+                spellcheck="false">
+        </section>
+
+        <section class="result-section">
+            <h2>TOTAL MOLAR MASS</h2>
+            <div class="mass-result">
+                <span>40.00</span>
+                <span class="unit">(g/mol)</span>
+            </div>
+        </section>
+
+        <section class="table-section">
+            <table>
+                <thead>
+                    <tr>
+                        <th>ATOM</th>
+                        <th>
+                            <div class="th-inner">
+                                <span>ELEMENT MOLAR MASS</span>
+                                <span class="th-unit">(g/mol)</span>
+                            </div>
+                        </th>
+                        <th>
+                            <div class="th-inner">
+                                <span>MASS CONTRIBUTION</span>
+                                <span class="th-unit">(%)</span>
+                            </div>
+                        </th>
+                        <th>
+                            <div class="th-inner">
+                                <span>SUBTOTAL MASS</span>
+                                <span class="th-unit">(g/mol)</span>
+                            </div>
+                        </th>
+                    </tr>
+                </thead>
+
+                <tbody>
+                    <tr>
+                        <td>Na</td>
+                        <td>22.99</td>
+                        <td>57.47</td>
+                        <td>22.99</td>
+                    </tr>
+                    <tr>
+                        <td>O</td>
+                        <td>16.00</td>
+                        <td>40.00</td>
+                        <td>16.00</td>
+                    </tr>
+                    <tr>
+                        <td>H</td>
+                        <td>1.01</td>
+                        <td>2.52</td>
+                        <td>1.01</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+
+    </main>
 </body>
+
 </html>
