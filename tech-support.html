@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="theme-color" content="#0D0D0D">
+
+    <title>Tech Support</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles/style.css">
+    <link rel="stylesheet" href="styles/tech-support.css">
+    <script src="scripts/script.js" defer></script>
+    <script src="scripts/tech-support.js" defer></script>
+</head>
+
+<body>
+    <div class="background-grid" aria-hidden="true"></div>
+    <div class="background-numbers" aria-hidden="true">
+        <span>34</span>
+        <span>34</span>
+        <span>34</span>
+    </div>
+
+    <header>
+        <button class="menu-icon" type="button" aria-label="Open menu" aria-controls="sidebar" aria-expanded="false">
+            <span></span>
+            <span></span>
+            <span></span>
+        </button>
+    </header>
+    <div class="sidebar-overlay" id="sidebar-overlay"></div>
+    <nav class="sidebar" id="sidebar" aria-label="Main menu">
+        <h2 class="sidebar-title">SUPER FUN MENU!</h2>
+
+        <ul class="sidebar-links">
+            <li><a href="index.html">Calculator</a></li>
+            <li><a href="photo-generator.html">Photo generator</a></li>
+            <li><a href="minecraft-ideas.html">Minecraft ideas</a></li>
+            <li><a href="spinny-chair.html">Spinny chair</a></li>
+            <li><a href="the-game.html">The game</a></li>
+            <li><a href="tech-support.html" aria-current="page">Tech support</a></li>
+        </ul>
+    </nav>
+
+    <main class="support">
+
+        <h1 class="support-title">TECH SUPPORT</h1>
+        <section class="support-card">
+            <div class="photo-frame">
+                <img src="images/gus-hoebrechts.jpg" alt="Gus Hoebrechts">
+            </div>
+
+            <div class="card-text">
+                <h2 class="card-heading">FUNCTIONALITY PROBLEMS:</h2>
+                <p class="card-name">Gus Hoebrechts</p>
+                <p class="card-email">Gus.hoebrechts@student.kuleuven.be</p>
+                <button type="button" class="contact-btn">CONTACT ME</button>
+            </div>
+        </section>
+        <section class="support-card support-card--reverse">
+            <div class="card-text">
+                <h2 class="card-heading">DESIGN PROBLEMS:</h2>
+                <p class="card-name">Joran Vlaeyen</p>
+                <p class="card-email">Joran Vlaeyen301@gmail.com</p>
+                <button type="button" class="contact-btn">CONTACT ME</button>
+            </div>
+
+            <div class="photo-frame">
+                <img src="images/joran-vlaeyen.jpg" alt="Joran Vlaeyen">
+            </div>
+        </section>
+
+        <div class="moral-support">
+            <button type="button" class="contact-btn moral-btn" id="moral-btn">MORAL SUPPORT</button>
+        </div>
+
+    </main>
+
+
+    <div class="game-screen" id="game-screen" aria-hidden="true">
+        <p class="game-title">THE GAME</p>
+    </div>
+
+    <audio id="game-audio" src="audio/fading-scream.mp3" preload="auto"></audio>
+
+    <div class="jumpscare" id="jumpscare" aria-hidden="true">
+        <img id="jumpscare-img" alt="">
+    </div>
+</body>
+
+</html>
