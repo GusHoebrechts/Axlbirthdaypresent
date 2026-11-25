@@ -1,6 +1,6 @@
 @font-face {
     font-family: "Cyberform";
-    src: url("fonts/CyberformDemo.otf") format("opentype");
+    src: url("/fonts/CyberformDemo.otf") format("opentype");
     font-display: swap;
 }
 
